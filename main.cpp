@@ -15,7 +15,7 @@
  * @param num numero de imagenes a recuperar
  * @param email cadena de caracteres que quieres buscar en la imagen
  * @param vectorOrigen vector donde estan almacenadas las imgs
- * @param anio anio en el que se tomaron las imagenes a almacenar en el nuevo ContenedorImagenes
+ * @param anio año en el que se tomaron las imagenes a almacenar en el nuevo ContenedorImagenes
  */
 void recuperaImgs(VDinamico<Imagen>& vec, string correo, VDinamico<Imagen>& vnuevo){
     for(int i=0; i<vec.tamlog(); ++i){
@@ -174,7 +174,7 @@ int main() {
                     system("pause");
                     break;
                 default:
-                    std::cout << "�Hasta luego!";
+                    std::cout << "¡Hasta luego!";
             }
         } while (accion == 1 || accion == 2 || accion == 3 || accion == 4);
 

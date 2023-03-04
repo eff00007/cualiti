@@ -27,10 +27,17 @@ const unsigned Fecha::diasMes[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30,
 Fecha::Fecha()
 {
     time_t tiempoActual;
-    struct tm *fechaActual;
+    struct tm fechaActual;
 
-    time(&tiempoActual);
-  	fechaActual = localtime(&tiempoActual);
+    time(&tiempoActual); // Obtener hora actual
+
+#if (defined(WIN32) || defined(_WIN32) || defined(__WIN32__))
+  	localtime_s(&fechaActual, &tiempoActual); 
+#else
+  	localtime_r(&tiempoActual, &fechaActual); // POSIX  
+#endif
+
+    leerTiempo(fechaActual);
 }
 
 Fecha::Fecha(unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora, unsigned aMin)
