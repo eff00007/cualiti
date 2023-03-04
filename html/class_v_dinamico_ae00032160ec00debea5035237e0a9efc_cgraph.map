@@ -1,0 +1,4 @@
+<map id="VDinamico::VDinamico" name="VDinamico::VDinamico">
+<area shape="rect" id="node1" title="constructor parametrizado de VDinamico, al que se le pasará un tamaño logico _tamlog y construira un ..." alt="" coords="5,5,161,32"/>
+<area shape="rect" id="node2" href="$class_v_dinamico.html#a0ea434c0396f88a7053217e80cecf029" title="metodo para consultar el tamaño logico _tamlog de un VDinamico" alt="" coords="209,5,341,32"/>
+</map>

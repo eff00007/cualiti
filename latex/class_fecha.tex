@@ -1,0 +1,197 @@
+\hypertarget{class_fecha}{}\doxysection{Fecha Class Reference}
+\label{class_fecha}\index{Fecha@{Fecha}}
+
+
+Clases sencilla para representar fechas y horas.  
+
+
+
+
+{\ttfamily \#include $<$fecha.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fecha_a5fbc6564d9c48e73cf8d27568a2a7fc5}{Fecha}} ()
+\item 
+\mbox{\hyperlink{class_fecha_a2548cec49fb9b07debabd9ee0565514f}{Fecha}} (unsigned a\+Dia, unsigned a\+Mes, unsigned a\+Anio, unsigned a\+Hora=0, unsigned a\+Min=0)
+\item 
+\mbox{\hyperlink{class_fecha_a7201e00ac3fa1e07dfa124f3bd999dec}{Fecha}} (const \mbox{\hyperlink{class_fecha}{Fecha}} \&f)
+\item 
+void \mbox{\hyperlink{class_fecha_a4c03df1d9e396d66886547173fba789d}{asignar\+Dia}} (unsigned a\+Dia, unsigned a\+Mes, unsigned a\+Anio)
+\item 
+void \mbox{\hyperlink{class_fecha_acc9b7a806cfe248814ba9d15b603d9fb}{asignar\+Hora}} (unsigned a\+Hora, unsigned a\+Min)
+\item 
+unsigned \mbox{\hyperlink{class_fecha_a14c51421f53202110c2dd030b4d323a8}{ver\+Hora}} () const
+\item 
+unsigned \mbox{\hyperlink{class_fecha_af10a546982dc738bef0c249357e1a0cf}{ver\+Min}} () const
+\item 
+unsigned \mbox{\hyperlink{class_fecha_a0f6a9694242181a60f6351dd031ec265}{ver\+Dia}} () const
+\item 
+unsigned \mbox{\hyperlink{class_fecha_ab42ccddfc74083d405b55ecd238cd393}{ver\+Mes}} () const
+\item 
+unsigned \mbox{\hyperlink{class_fecha_a0b56e2d6672bc728cf82c4e26ab7fb38}{ver\+Anio}} () const
+\item 
+string \mbox{\hyperlink{class_fecha_aafc66a9292606a568dadd6a5bf9431d2}{cadena\+Dia}} () const
+\item 
+string \mbox{\hyperlink{class_fecha_ae898e8367f3d20810978a6b7e7125e16}{cadena\+Hora}} () const
+\item 
+string \mbox{\hyperlink{class_fecha_aa6a276b8355939d81fd8972c8d4ab42c}{cadena}} () const
+\item 
+bool \mbox{\hyperlink{class_fecha_a1d9b65cc26a1033ac812824f90955638}{mismo\+Dia}} (const \mbox{\hyperlink{class_fecha}{Fecha}} \&f) const
+\item 
+bool \mbox{\hyperlink{class_fecha_a704289d9c23c088b957b96ac4f4a2453}{operator$<$}} (const \mbox{\hyperlink{class_fecha}{Fecha}} \&f)
+\item 
+\mbox{\hyperlink{class_fecha}{Fecha}} \& \mbox{\hyperlink{class_fecha_a44e01b56126ce63d8a56ffbb09088d7f}{operator=}} (const \mbox{\hyperlink{class_fecha}{Fecha}} \&f)
+\item 
+void \mbox{\hyperlink{class_fecha_ab55f8847567931178bd7491704dbd689}{anadir\+Min}} (int num\+Min)
+\item 
+void \mbox{\hyperlink{class_fecha_a2a65bd0f06a99d7e04aedd28adcbf7c5}{anadir\+Horas}} (int num\+Horas)
+\item 
+void \mbox{\hyperlink{class_fecha_a2a01bb1bf2ca4a4ff43a55ace084002f}{anadir\+Dias}} (int num\+Dias)
+\item 
+void \mbox{\hyperlink{class_fecha_a89e9848dbdf7487d454770089290149b}{anadir\+Meses}} (int num\+Meses)
+\item 
+void \mbox{\hyperlink{class_fecha_a6d91c9cbe056f0693c46e318613e67eb}{anadir\+Anios}} (int num\+Anios)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clases sencilla para representar fechas y horas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fecha_a5fbc6564d9c48e73cf8d27568a2a7fc5}\label{class_fecha_a5fbc6564d9c48e73cf8d27568a2a7fc5}} 
+\index{Fecha@{Fecha}!Fecha@{Fecha}}
+\index{Fecha@{Fecha}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{Fecha()}{Fecha()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Fecha\+::\+Fecha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Crea una fecha con la hora actual \mbox{\Hypertarget{class_fecha_a2548cec49fb9b07debabd9ee0565514f}\label{class_fecha_a2548cec49fb9b07debabd9ee0565514f}} 
+\index{Fecha@{Fecha}!Fecha@{Fecha}}
+\index{Fecha@{Fecha}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{Fecha()}{Fecha()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Fecha\+::\+Fecha (\begin{DoxyParamCaption}\item[{unsigned}]{a\+Dia,  }\item[{unsigned}]{a\+Mes,  }\item[{unsigned}]{a\+Anio,  }\item[{unsigned}]{a\+Hora = {\ttfamily 0},  }\item[{unsigned}]{a\+Min = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Crea una fecha concreta. Devuelve una excepción \mbox{\hyperlink{class_error_fecha_incorrecta}{Error\+Fecha\+Incorrecta}} si la fecha introducida no es correcta \mbox{\Hypertarget{class_fecha_a7201e00ac3fa1e07dfa124f3bd999dec}\label{class_fecha_a7201e00ac3fa1e07dfa124f3bd999dec}} 
+\index{Fecha@{Fecha}!Fecha@{Fecha}}
+\index{Fecha@{Fecha}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{Fecha()}{Fecha()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Fecha\+::\+Fecha (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fecha}{Fecha}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor copia 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fecha_a6d91c9cbe056f0693c46e318613e67eb}\label{class_fecha_a6d91c9cbe056f0693c46e318613e67eb}} 
+\index{Fecha@{Fecha}!anadirAnios@{anadirAnios}}
+\index{anadirAnios@{anadirAnios}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{anadirAnios()}{anadirAnios()}}
+{\footnotesize\ttfamily void Fecha\+::anadir\+Anios (\begin{DoxyParamCaption}\item[{int}]{num\+Anios }\end{DoxyParamCaption})}
+
+Añadir un nœmero de a–os indicado \mbox{\Hypertarget{class_fecha_a2a01bb1bf2ca4a4ff43a55ace084002f}\label{class_fecha_a2a01bb1bf2ca4a4ff43a55ace084002f}} 
+\index{Fecha@{Fecha}!anadirDias@{anadirDias}}
+\index{anadirDias@{anadirDias}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{anadirDias()}{anadirDias()}}
+{\footnotesize\ttfamily void Fecha\+::anadir\+Dias (\begin{DoxyParamCaption}\item[{int}]{num\+Dias }\end{DoxyParamCaption})}
+
+A–adir un nœmero de d’as indicado \mbox{\Hypertarget{class_fecha_a2a65bd0f06a99d7e04aedd28adcbf7c5}\label{class_fecha_a2a65bd0f06a99d7e04aedd28adcbf7c5}} 
+\index{Fecha@{Fecha}!anadirHoras@{anadirHoras}}
+\index{anadirHoras@{anadirHoras}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{anadirHoras()}{anadirHoras()}}
+{\footnotesize\ttfamily void Fecha\+::anadir\+Horas (\begin{DoxyParamCaption}\item[{int}]{num\+Horas }\end{DoxyParamCaption})}
+
+A–adir un nœmero de horas indicado \mbox{\Hypertarget{class_fecha_a89e9848dbdf7487d454770089290149b}\label{class_fecha_a89e9848dbdf7487d454770089290149b}} 
+\index{Fecha@{Fecha}!anadirMeses@{anadirMeses}}
+\index{anadirMeses@{anadirMeses}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{anadirMeses()}{anadirMeses()}}
+{\footnotesize\ttfamily void Fecha\+::anadir\+Meses (\begin{DoxyParamCaption}\item[{int}]{num\+Meses }\end{DoxyParamCaption})}
+
+A–adir un nœmero de meses indicado \mbox{\Hypertarget{class_fecha_ab55f8847567931178bd7491704dbd689}\label{class_fecha_ab55f8847567931178bd7491704dbd689}} 
+\index{Fecha@{Fecha}!anadirMin@{anadirMin}}
+\index{anadirMin@{anadirMin}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{anadirMin()}{anadirMin()}}
+{\footnotesize\ttfamily void Fecha\+::anadir\+Min (\begin{DoxyParamCaption}\item[{int}]{num\+Min }\end{DoxyParamCaption})}
+
+A–adir un nœmero de minutos indicado \mbox{\Hypertarget{class_fecha_a4c03df1d9e396d66886547173fba789d}\label{class_fecha_a4c03df1d9e396d66886547173fba789d}} 
+\index{Fecha@{Fecha}!asignarDia@{asignarDia}}
+\index{asignarDia@{asignarDia}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{asignarDia()}{asignarDia()}}
+{\footnotesize\ttfamily void Fecha\+::asignar\+Dia (\begin{DoxyParamCaption}\item[{unsigned}]{a\+Dia,  }\item[{unsigned}]{a\+Mes,  }\item[{unsigned}]{a\+Anio }\end{DoxyParamCaption})}
+
+Asignar un nuevo día \mbox{\Hypertarget{class_fecha_acc9b7a806cfe248814ba9d15b603d9fb}\label{class_fecha_acc9b7a806cfe248814ba9d15b603d9fb}} 
+\index{Fecha@{Fecha}!asignarHora@{asignarHora}}
+\index{asignarHora@{asignarHora}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{asignarHora()}{asignarHora()}}
+{\footnotesize\ttfamily void Fecha\+::asignar\+Hora (\begin{DoxyParamCaption}\item[{unsigned}]{a\+Hora,  }\item[{unsigned}]{a\+Min }\end{DoxyParamCaption})}
+
+Asignar una nueva hora \mbox{\Hypertarget{class_fecha_aa6a276b8355939d81fd8972c8d4ab42c}\label{class_fecha_aa6a276b8355939d81fd8972c8d4ab42c}} 
+\index{Fecha@{Fecha}!cadena@{cadena}}
+\index{cadena@{cadena}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{cadena()}{cadena()}}
+{\footnotesize\ttfamily string Fecha\+::cadena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtener una cadena con d’a y hora \mbox{\Hypertarget{class_fecha_aafc66a9292606a568dadd6a5bf9431d2}\label{class_fecha_aafc66a9292606a568dadd6a5bf9431d2}} 
+\index{Fecha@{Fecha}!cadenaDia@{cadenaDia}}
+\index{cadenaDia@{cadenaDia}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{cadenaDia()}{cadenaDia()}}
+{\footnotesize\ttfamily string Fecha\+::cadena\+Dia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtener una cadena con el d’a \mbox{\Hypertarget{class_fecha_ae898e8367f3d20810978a6b7e7125e16}\label{class_fecha_ae898e8367f3d20810978a6b7e7125e16}} 
+\index{Fecha@{Fecha}!cadenaHora@{cadenaHora}}
+\index{cadenaHora@{cadenaHora}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{cadenaHora()}{cadenaHora()}}
+{\footnotesize\ttfamily string Fecha\+::cadena\+Hora (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Obtener una cadena con la hora \mbox{\Hypertarget{class_fecha_a1d9b65cc26a1033ac812824f90955638}\label{class_fecha_a1d9b65cc26a1033ac812824f90955638}} 
+\index{Fecha@{Fecha}!mismoDia@{mismoDia}}
+\index{mismoDia@{mismoDia}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{mismoDia()}{mismoDia()}}
+{\footnotesize\ttfamily bool Fecha\+::mismo\+Dia (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fecha}{Fecha}} \&}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indica si las dos fechas tienen el mismo d’a \mbox{\Hypertarget{class_fecha_a704289d9c23c088b957b96ac4f4a2453}\label{class_fecha_a704289d9c23c088b957b96ac4f4a2453}} 
+\index{Fecha@{Fecha}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Fecha\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fecha}{Fecha}} \&}]{f }\end{DoxyParamCaption})}
+
+Comparar fechas \mbox{\Hypertarget{class_fecha_a44e01b56126ce63d8a56ffbb09088d7f}\label{class_fecha_a44e01b56126ce63d8a56ffbb09088d7f}} 
+\index{Fecha@{Fecha}!operator=@{operator=}}
+\index{operator=@{operator=}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fecha}{Fecha}} \& Fecha\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fecha}{Fecha}} \&}]{f }\end{DoxyParamCaption})}
+
+Asignar fechas \mbox{\Hypertarget{class_fecha_a0b56e2d6672bc728cf82c4e26ab7fb38}\label{class_fecha_a0b56e2d6672bc728cf82c4e26ab7fb38}} 
+\index{Fecha@{Fecha}!verAnio@{verAnio}}
+\index{verAnio@{verAnio}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{verAnio()}{verAnio()}}
+{\footnotesize\ttfamily unsigned Fecha\+::ver\+Anio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtener a–o \mbox{\Hypertarget{class_fecha_a0f6a9694242181a60f6351dd031ec265}\label{class_fecha_a0f6a9694242181a60f6351dd031ec265}} 
+\index{Fecha@{Fecha}!verDia@{verDia}}
+\index{verDia@{verDia}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{verDia()}{verDia()}}
+{\footnotesize\ttfamily unsigned Fecha\+::ver\+Dia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtener dia \mbox{\Hypertarget{class_fecha_a14c51421f53202110c2dd030b4d323a8}\label{class_fecha_a14c51421f53202110c2dd030b4d323a8}} 
+\index{Fecha@{Fecha}!verHora@{verHora}}
+\index{verHora@{verHora}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{verHora()}{verHora()}}
+{\footnotesize\ttfamily unsigned Fecha\+::ver\+Hora (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtener hora \mbox{\Hypertarget{class_fecha_ab42ccddfc74083d405b55ecd238cd393}\label{class_fecha_ab42ccddfc74083d405b55ecd238cd393}} 
+\index{Fecha@{Fecha}!verMes@{verMes}}
+\index{verMes@{verMes}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{verMes()}{verMes()}}
+{\footnotesize\ttfamily unsigned Fecha\+::ver\+Mes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtener mes \mbox{\Hypertarget{class_fecha_af10a546982dc738bef0c249357e1a0cf}\label{class_fecha_af10a546982dc738bef0c249357e1a0cf}} 
+\index{Fecha@{Fecha}!verMin@{verMin}}
+\index{verMin@{verMin}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{verMin()}{verMin()}}
+{\footnotesize\ttfamily unsigned Fecha\+::ver\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtener minutos 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+fecha.\+h\item 
+fecha.\+cpp\end{DoxyCompactItemize}
