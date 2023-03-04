@@ -1,0 +1,6 @@
+<map id="recuperaImgs" name="recuperaImgs">
+<area shape="rect" id="node1" title="recupera un numero de imagenes determinado por el usuario conociendo el email que figura en el atribu..." alt="" coords="5,56,107,83"/>
+<area shape="rect" id="node2" href="$class_v_dinamico.html#a44c4a73439f1e5f1275c5a43a93d3964" title="metodo para borrar datos en un objeto VDinamico" alt="" coords="159,5,286,32"/>
+<area shape="rect" id="node3" href="$class_v_dinamico.html#a439606ef0ea9abd0ab7836931f50c502" title="metodo para insertar datos en un objeto VDinamico" alt="" coords="155,56,291,83"/>
+<area shape="rect" id="node4" href="$class_v_dinamico.html#a0ea434c0396f88a7053217e80cecf029" title="metodo para consultar el tamaño logico _tamlog de un VDinamico" alt="" coords="157,107,289,133"/>
+</map>

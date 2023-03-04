@@ -1,0 +1,171 @@
+\hypertarget{class_imagen}{}\doxysection{Imagen Class Reference}
+\label{class_imagen}\index{Imagen@{Imagen}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}\label{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}} 
+\mbox{\hyperlink{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen}} ()
+\begin{DoxyCompactList}\small\item\em constructor por defecto de \mbox{\hyperlink{class_imagen}{Imagen}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen_a9bdacc6af6d2dc2616b393409080c3e9}{Imagen}} (const string \&id, const string \&email, const string \&nombre, int tam, const \mbox{\hyperlink{class_fecha}{Fecha}} \&fecha, const string \&etiquetas)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado de \mbox{\hyperlink{class_imagen}{Imagen}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_imagen_ada12145018eb081a5d58721622e7ee30}\label{class_imagen_ada12145018eb081a5d58721622e7ee30}} 
+const string \& {\bfseries get\+Id} () const
+\item 
+\mbox{\Hypertarget{class_imagen_ace76613f7d8c7ae249df5c23b32179b6}\label{class_imagen_ace76613f7d8c7ae249df5c23b32179b6}} 
+void {\bfseries set\+Id} (const string \&id)
+\item 
+\mbox{\Hypertarget{class_imagen_a426ba97dfee87122d4a3a61b4459ad52}\label{class_imagen_a426ba97dfee87122d4a3a61b4459ad52}} 
+const string \& {\bfseries get\+Email} () const
+\item 
+\mbox{\Hypertarget{class_imagen_a7e6ef70712cfe00999a06594fb6f6d32}\label{class_imagen_a7e6ef70712cfe00999a06594fb6f6d32}} 
+void {\bfseries set\+Email} (const string \&email)
+\item 
+\mbox{\Hypertarget{class_imagen_af9a98fdd25386abc59ddf0494d3a911d}\label{class_imagen_af9a98fdd25386abc59ddf0494d3a911d}} 
+const string \& {\bfseries get\+Nombre} () const
+\item 
+\mbox{\Hypertarget{class_imagen_aa97acfda107dd7e13dd0a5447f4eba3d}\label{class_imagen_aa97acfda107dd7e13dd0a5447f4eba3d}} 
+void {\bfseries set\+Nombre} (const string \&nombre)
+\item 
+\mbox{\Hypertarget{class_imagen_ac917b89e3e0557ab5a03a6a17597dea0}\label{class_imagen_ac917b89e3e0557ab5a03a6a17597dea0}} 
+int {\bfseries get\+Tam} () const
+\item 
+\mbox{\Hypertarget{class_imagen_aeaf92cbc3b9851af7b6571af9e56ae30}\label{class_imagen_aeaf92cbc3b9851af7b6571af9e56ae30}} 
+void {\bfseries set\+Tam} (int tam)
+\item 
+\mbox{\Hypertarget{class_imagen_a5b1aed37f369896b51765f9c4861dee2}\label{class_imagen_a5b1aed37f369896b51765f9c4861dee2}} 
+const \mbox{\hyperlink{class_fecha}{Fecha}} \& {\bfseries get\+Fecha} () const
+\item 
+\mbox{\Hypertarget{class_imagen_abbc16eea4d29a682c5ab2483216fb83b}\label{class_imagen_abbc16eea4d29a682c5ab2483216fb83b}} 
+void {\bfseries set\+Fecha} (const \mbox{\hyperlink{class_fecha}{Fecha}} \&fecha)
+\item 
+\mbox{\Hypertarget{class_imagen_a82bbc35c733345bc38bd26cc32681d22}\label{class_imagen_a82bbc35c733345bc38bd26cc32681d22}} 
+const string \& {\bfseries get\+Etiquetas} () const
+\item 
+\mbox{\Hypertarget{class_imagen_a79f0bcba329b03e3e8acf1667d96fee5}\label{class_imagen_a79f0bcba329b03e3e8acf1667d96fee5}} 
+void {\bfseries set\+Etiquetas} (const string \&etiquetas)
+\item 
+bool \mbox{\hyperlink{class_imagen_a482341112aabeb82df220c12ea12a876}{operator$<$}} (const \mbox{\hyperlink{class_imagen}{Imagen}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em operador menor que de \mbox{\hyperlink{class_imagen}{Imagen}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_imagen_ab9d0fc8cb055b21f0f4d52d95daebc67}{operator$>$}} (const \mbox{\hyperlink{class_imagen}{Imagen}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em operador mayor que de \mbox{\hyperlink{class_imagen}{Imagen}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_imagen_ac35dff7624a0bf95849248ceb7c28d5b}{operator==}} (const \mbox{\hyperlink{class_imagen}{Imagen}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em operador == de \mbox{\hyperlink{class_imagen}{Imagen}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_imagen_a299886817efbcfcea6ba7f2d57fabf64}\label{class_imagen_a299886817efbcfcea6ba7f2d57fabf64}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_imagen}{Imagen}} \&rhs) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_imagen_a23d09332b8df6a1af7223fa2ddfc0443}{mayor\+Que}} (\mbox{\hyperlink{class_imagen}{Imagen}} \&a, \mbox{\hyperlink{class_imagen}{Imagen}} \&b)
+\begin{DoxyCompactList}\small\item\em metodo que compara dos objetos de tipo \mbox{\hyperlink{class_imagen}{Imagen}}, a y b, y devuelve un valor booleano si la condicion especificada se cumple o no, necesario para el correcto funcionamiento de Cntenedor\+Imagenes\+::ordena\+Rev \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_imagen_a9bdacc6af6d2dc2616b393409080c3e9}\label{class_imagen_a9bdacc6af6d2dc2616b393409080c3e9}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{Imagen()}{Imagen()}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{const string \&}]{id,  }\item[{const string \&}]{email,  }\item[{const string \&}]{nombre,  }\item[{int}]{tam,  }\item[{const \mbox{\hyperlink{class_fecha}{Fecha}} \&}]{fecha,  }\item[{const string \&}]{etiquetas }\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado de \mbox{\hyperlink{class_imagen}{Imagen}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em email} & \\
+\hline
+{\em nombre} & \\
+\hline
+{\em tam} & \\
+\hline
+{\em fecha} & \\
+\hline
+{\em etiquetas} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_imagen_a23d09332b8df6a1af7223fa2ddfc0443}\label{class_imagen_a23d09332b8df6a1af7223fa2ddfc0443}} 
+\index{Imagen@{Imagen}!mayorQue@{mayorQue}}
+\index{mayorQue@{mayorQue}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{mayorQue()}{mayorQue()}}
+{\footnotesize\ttfamily bool Imagen\+::mayor\+Que (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{a,  }\item[{\mbox{\hyperlink{class_imagen}{Imagen}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+metodo que compara dos objetos de tipo \mbox{\hyperlink{class_imagen}{Imagen}}, a y b, y devuelve un valor booleano si la condicion especificada se cumple o no, necesario para el correcto funcionamiento de Cntenedor\+Imagenes\+::ordena\+Rev 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{class_imagen}{Imagen}} a comparar \\
+\hline
+{\em b} & \mbox{\hyperlink{class_imagen}{Imagen}} a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stoi(a.\+get\+Id()) $>$ stoi(b.\+get\+Id()) valor booleano segun si dicha condicion se cumple 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_imagen_a482341112aabeb82df220c12ea12a876}\label{class_imagen_a482341112aabeb82df220c12ea12a876}} 
+\index{Imagen@{Imagen}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Imagen\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_imagen}{Imagen}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+operador menor que de \mbox{\hyperlink{class_imagen}{Imagen}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \char`\"{}right hand side\char`\"{} objeto \mbox{\hyperlink{class_imagen}{Imagen}} con el que se compara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se cumple la condicion, false en cualquier otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_imagen_ac35dff7624a0bf95849248ceb7c28d5b}\label{class_imagen_ac35dff7624a0bf95849248ceb7c28d5b}} 
+\index{Imagen@{Imagen}!operator==@{operator==}}
+\index{operator==@{operator==}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Imagen\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_imagen}{Imagen}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+operador == de \mbox{\hyperlink{class_imagen}{Imagen}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \char`\"{}right hand side\char`\"{} objeto \mbox{\hyperlink{class_imagen}{Imagen}} con el que se compara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor booleano true si los objetos de tipo \mbox{\hyperlink{class_imagen}{Imagen}} tienen la misma informacion y false si lo anterior no se cumple 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_imagen_ab9d0fc8cb055b21f0f4d52d95daebc67}\label{class_imagen_ab9d0fc8cb055b21f0f4d52d95daebc67}} 
+\index{Imagen@{Imagen}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Imagen\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_imagen}{Imagen}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+operador mayor que de \mbox{\hyperlink{class_imagen}{Imagen}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \char`\"{}right hand side\char`\"{} objeto \mbox{\hyperlink{class_imagen}{Imagen}} con el que se compara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se cumple la condicion, false en cualquier otro caso 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Imagen.\+h\item 
+Imagen.\+cpp\end{DoxyCompactItemize}
